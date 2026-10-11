@@ -1,0 +1,26 @@
+html.glide,
+html.glide body {
+  height: auto;
+}
+
+.glide:not(.glide-autoToggle).glide-stopped {
+  overflow: clip;
+}
+
+.glide [data-glide-prevent],
+.glide [data-glide-prevent-wheel],
+.glide [data-glide-prevent-touch],
+.glide [data-glide-prevent-vertical],
+.glide [data-glide-prevent-horizontal] {
+  overscroll-behavior: contain;
+}
+
+.glide.glide-smooth iframe {
+  pointer-events: none;
+}
+
+.glide.glide-autoToggle {
+  transition-property: overflow;
+  transition-duration: 1ms;
+  transition-behavior: allow-discrete;
+}

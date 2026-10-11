@@ -1,0 +1,72 @@
+{
+  "name": "glide",
+  "version": "1.3.26",
+  "description": "How smooth scroll should be",
+  "type": "module",
+  "sideEffects": false,
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "scroll",
+    "smooth",
+    "glide",
+    "react",
+    "vue"
+  ],
+  "scripts": {
+    "build": "tsdown"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.2",
+    "tsdown": "^0.21.4",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@nuxt/kit": ">=3.0.0",
+    "react": ">=17.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    },
+    "@nuxt/kit": {
+      "optional": true
+    }
+  },
+  "unpkg": "./dist/glide.mjs",
+  "main": "./dist/glide.mjs",
+  "module": "./dist/glide.mjs",
+  "types": "./dist/glide.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/glide.d.ts",
+      "default": "./dist/glide.mjs"
+    },
+    "./react": {
+      "types": "./dist/glide-react.d.ts",
+      "default": "./dist/glide-react.mjs"
+    },
+    "./snap": {
+      "types": "./dist/glide-snap.d.ts",
+      "default": "./dist/glide-snap.mjs"
+    },
+    "./vue": {
+      "types": "./dist/glide-vue.d.ts",
+      "default": "./dist/glide-vue.mjs"
+    },
+    "./nuxt": {
+      "default": "./dist/glide-vue-nuxt.mjs"
+    },
+    "./nuxt/runtime/*": {
+      "default": "./dist/nuxt/runtime/*.mjs"
+    },
+    "./dist/*": "./dist/*"
+  }
+}
